@@ -17,6 +17,7 @@
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button.titleLabel setAdjustsFontSizeToFitWidth:YES];
+    [button.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [self addObject:button];
 }
 
@@ -26,6 +27,7 @@
     button.backgroundColor = color;
     [button setAttributedTitle:title forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [self addObject:button];
 }
 
@@ -34,6 +36,7 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.backgroundColor = color;
     [button setImage:icon forState:UIControlStateNormal];
+    [button.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [self addObject:button];
 }
 
@@ -43,6 +46,7 @@
     [button setImage:normalIcon forState:UIControlStateNormal];
     [button setImage:selectedIcon forState:UIControlStateHighlighted];
     [button setImage:selectedIcon forState:UIControlStateSelected];
+    [button.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [self addObject:button];
 }
 
